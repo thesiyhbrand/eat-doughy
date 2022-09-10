@@ -1,0 +1,235 @@
+@font-face {
+    font-family: Futura-bold;
+    src: url(/font/Futura\ Md\ BT\ Bold.ttf);
+}
+@font-face {
+    font-family: Futura-italic;
+    src: url(/font/Futura\ Md\ BT\ Bold\ Italic.ttf);
+}
+@font-face {
+    font-family: Futura-medium;
+    src: url(/font/Futura\ Md\ BT\ Medium.ttf);
+}
+@font-face {
+    font-family: Futura-m-italic;
+    src: url(/font/Futura\ Md\ BT\ Medium\ Italic.ttf);
+}
+@font-face {
+    font-family: Perfectly-i;
+    src: url(/font/Perfectly_Nineties-Italic.ttf);
+}
+@font-face {
+    font-family: Perfectly;
+    src: url(/font/Perfectly_Nineties-Regular.ttf);
+}
+@font-face {
+    font-family: futura-light;
+    src: url(/font/Futura\ Lt\ BT\ Light.ttf);
+}
+@font-face {
+    font-family: futura-light-i;
+    src: url(/font/Futura\ Lt\ BT\ Light\ Italic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FCF7F1;
+}
+
+#nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(252, 247, 241);
+    padding: 0vw 3vw;
+    border-bottom: 2px solid #333;
+}
+
+#lft-nav{
+    width: calc(100%/3);
+    /* background-color: blue; */
+}
+
+#lft-nav i{
+    display: none;
+}
+
+#cntr-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/3);
+    /* background-color: rgb(38, 236, 236); */
+}
+
+
+#shop-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7vw;
+    height: 2.2vw;
+    border-radius: 50px;
+    border: 2px solid #333;
+    /* background-color: antiquewhite; */
+}
+
+#shop-btn a{
+    color: #333;
+    font-family: "Futura-medium";
+    font-size: 0.7vw;
+}
+
+#cntr-nav svg{
+    width: 7vw;
+}
+
+#rght-nav{
+    width: calc(100%/3);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Futura-medium";
+}
+
+#rght-nav a{
+    font-size: 0.8vw;
+    margin-right: 1vw;
+    color: #333;
+}
+
+#rght-nav i{
+    font-size: 1.5vw;
+    margin-right: 1vw;
+}
+
+#one{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#lft-one{
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+
+#lft-one video{
+    width: 100%;
+    height: 110vh;
+}
+
+#rght-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100vh;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+#rght-one h1{
+    width: 80%;
+    font-size: 3vw;
+    text-align: center;
+    font-family: "Perfectly";
+    font-weight: 400;
+}
+
+#rght-one h1 i{
+    font-family: initial;
+}
+
+#s-btn{
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13vw;
+    height: 3.5vw;
+    border: 2px solid #333;
+    border-radius: 50px;
+    font-family: "futura-light";
+    font-size: 0.7vw;
+    letter-spacing: 1px;
+}
+
+@media(max-width: 500px){
+    #nav{
+        height: 7vh;
+    }
+    #lft-nav i{
+        display: initial;
+        font-size: 5vw;
+    }
+    #shop-btn{
+        display: none;
+    }
+    #cntr-nav svg {
+        width: 23vw;
+    }
+    #rght-nav a {
+        display: none;
+    }
+    .ri-account-circle-fill{
+        display: none;
+    }
+    .ri-shopping-cart-2-fill{
+        font-size: 5vw !important;
+    }
+    #one{
+        flex-direction: column-reverse;
+    }
+    #rght-one {
+        width: 100%;
+        height: 100vh;
+        border-right: none;
+        border-bottom: none;
+    }
+    #rght-one h1 {
+        margin-top: 5vw;
+        font-size: 10vw;
+    }
+    #s-btn {
+        margin-top: 5vw;
+        width: 41vw;
+        height: 10.5vw;
+    }
+    #s-btn h2{
+        font-size: 3vw;
+    }
+    #lft-one {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    #lft-one video {
+        position: absolute;
+        left: -50%;
+        width: 160%;
+        height: 60vh;
+    }
+}
