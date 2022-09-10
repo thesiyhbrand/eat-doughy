@@ -1,34 +1,34 @@
 @font-face {
     font-family: Futura-bold;
-    src: url(/font/Futura\ Md\ BT\ Bold.ttf);
+    src: url(font/Futura\ Md\ BT\ Bold.ttf);
 }
 @font-face {
     font-family: Futura-italic;
-    src: url(/font/Futura\ Md\ BT\ Bold\ Italic.ttf);
+    src: url(font/Futura\ Md\ BT\ Bold\ Italic.ttf);
 }
 @font-face {
     font-family: Futura-medium;
-    src: url(/font/Futura\ Md\ BT\ Medium.ttf);
+    src: url(font/Futura\ Md\ BT\ Medium.ttf);
 }
 @font-face {
     font-family: Futura-m-italic;
-    src: url(/font/Futura\ Md\ BT\ Medium\ Italic.ttf);
+    src: url(font/Futura\ Md\ BT\ Medium\ Italic.ttf);
 }
 @font-face {
     font-family: Perfectly-i;
-    src: url(/font/Perfectly_Nineties-Italic.ttf);
+    src: url(font/Perfectly_Nineties-Italic.ttf);
 }
 @font-face {
     font-family: Perfectly;
-    src: url(/font/Perfectly_Nineties-Regular.ttf);
+    src: url(font/Perfectly_Nineties-Regular.ttf);
 }
 @font-face {
     font-family: futura-light;
-    src: url(/font/Futura\ Lt\ BT\ Light.ttf);
+    src: url(font/Futura\ Lt\ BT\ Light.ttf);
 }
 @font-face {
     font-family: futura-light-i;
-    src: url(/font/Futura\ Lt\ BT\ Light\ Italic.ttf);
+    src: url(font/Futura\ Lt\ BT\ Light\ Italic.ttf);
 }
 
 *{
