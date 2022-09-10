@@ -229,7 +229,7 @@ html, body{
     #lft-one video {
         position: absolute;
         left: -50%;
-        width: 160%;
-        height: 60vh;
+        width: 200%;
+        height: 51vh;
     }
 }
