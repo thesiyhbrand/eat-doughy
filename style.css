@@ -62,6 +62,7 @@ html, body{
     background-color: rgb(252, 247, 241);
     padding: 0vw 3vw;
     border-bottom: 2px solid #333;
+    z-index: 999999999999;
 }
 
 #lft-nav{
@@ -147,8 +148,8 @@ html, body{
     flex-direction: column;
     width: 30%;
     height: 100vh;
-    border-bottom: 1px solid #333;
-    border-right: 1px solid #333;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
 }
 
 #rght-one h1{
@@ -176,6 +177,240 @@ html, body{
     font-size: 0.7vw;
     letter-spacing: 1px;
 }
+
+#two{
+    width: 100%;
+    height: 30vh;
+    /* background-color: #333; */
+}
+
+#two-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#two-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 20vh;
+    background-color: #FCF7F1;
+}
+
+#two-heading h1{
+    margin-top: 3.5vw;
+    font-size: 3vw;
+    font-family: "Perfectly";
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#two-heading h1 span{
+    font-family: initial;
+}
+
+.in-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.in-slide svg{
+    width: 4vw;
+    height: 4vw;
+    margin-bottom: 10px;
+}
+
+.in-slide p{
+    font-family: "futura-light";
+    font-size: 1.2vw;
+}
+#three{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#three-one{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+#three-two{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+#three-three{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+#lft-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+}
+#rght-three{
+    width: 50%;
+    height: 100vh;
+    /* background-color: cadetblue; */
+}
+.txt-three0{
+    margin-top: 60vw;
+}
+/* .txt-three2{
+    display: none !important;
+} */
+#txt-three{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #E0BD88; */
+}
+#txt-three h1{
+    font-size: 2.5vw;
+    font-family: "Perfectly";
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+#txt-three p{
+    font-family: "futura-light";
+    font-size: 1vw;
+    padding: 1vw;
+
+}
+.items-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.items-list .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+}
+.items-list .item img{
+    width: 3vw;
+}
+.items-list .item p{
+    font-size: 0.9vw !important;
+}
+#three-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 2.5vw;
+    border-radius: 50px;
+    border: 2px solid #333;
+    margin-top: 1vw;
+}
+#three-btn h2{
+    font-size: 1vw;
+    font-family: "futura-light";
+    font-weight: 400;
+}
+#rght-three-slide .cir{
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translate(0%, -40%);
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    background-color: #D7F0EB;
+}
+#rght-three-slide #cir-two{
+    background-color: #E7BF97;
+}
+#rght-three-slide #cir-three{
+    background-color: #E0BD88;
+}
+#can{
+    display: flex;
+    flex-direction: column;
+}
+.cir-img{
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+    margin-left: -10vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+/* .cir-img:nth-child(1){
+    margin-bottom: 15vw;
+}
+.cir-img:nth-child(2){
+    margin-bottom: -5vw;
+} */
+.cir-img img:nth-child(1){
+    margin-right: 10vw;
+    margin-top: -22vw;
+    width: 15vw;
+    z-index: 98;
+}
+.cir-img img:nth-child(2){
+    margin-right: -8vw;
+    width: 23vw;
+    z-index: 99;
+}
+.smcir{
+    position: absolute;
+    top: 55%;
+    right: 3%;
+    transform: translate(0%, -50%);
+    display: flex;
+    z-index: 99999;
+    flex-direction: column;
+    align-items: center;
+}
+.sm-cir{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin: 0.2vw;
+}
+#sm-cir1{
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 500px){
     #nav{
@@ -231,5 +466,89 @@ html, body{
         left: -50%;
         width: 200%;
         height: 51vh;
+    }
+    #two-heading h1{
+        margin-top: 5vh;
+        font-size: 7vw;
+    }
+    #two-icons{
+        margin-top: 3vh;
+        width: 100%;
+        height: 10vh;
+    }
+    .in-slide svg {
+        width: 10vw;
+        height: 10vw;
+    }
+    .in-slide p {
+        font-size: 2.4vw;
+    }
+    #three-one{
+        flex-direction: column;
+    }
+    #lft-three{
+        width: 100%;
+        height: 90vh;
+    }
+    #txt-three h1{
+        font-size: 8vw;
+    }
+    #txt-three p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 3.2vw;
+    }
+    .items-list {
+        width: 70%;
+    }
+    .items-list .item img{
+        width: 10vw;
+    }
+    .items-list .item p {
+        font-size: 3vw !important;
+    }
+    #three-btn{
+        margin-top: 5vw;
+        width: 26vw;
+        height: 6.5vw;
+    }
+    .txt-three0{
+        margin-top: 110vw;
+        height: 50%;
+    }
+    #three-btn h2 {
+        font-size: 3vw;
+    }
+    #rght-three-slide .cir{
+        width: 50vw;
+        height: 50vw;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #can{
+        margin-top: -30vh;
+        width: 250%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .txt-three0{
+        margin-top: 10vh;
+    }
+    .txt-three1{
+        margin-top: -28vh;
+    }
+    .txt-three2{
+        margin-top: -28vh;
+    }
+    .cir-img img:nth-child(1){
+        width: 35vw;
+        margin-right: -3vw;
+        margin-top: -38vw;
+    }
+    .cir-img img:nth-child(2){
+        width: 40vw;
+        margin-right: -15vw;
     }
 }
