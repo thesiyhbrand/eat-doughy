@@ -1,19 +1,3 @@
-// var tl = gsap.timeline({scrollTrigger:{
-//     trigger:"#three",
-//     // markers:true,
-//     start:"50% 50%",
-//     end:"80% 50%",
-//     scrub:3,
-//     pin:true
-// }});
-// tl
-// .to("#three-one",{
-//     duration:3,
-//     opacity:0,
-// })
-// .fromTo("#three-two", {opacity: 0}, {ease:Power0.easeOut, duration:3, top:"-100%", opacity:1})
-
-// gsap.fromTo(".animate1",{opacity:0}, {opacity:1})
 
 var tl = gsap.timeline({scrollTrigger:{
     trigger:"#three",
@@ -56,10 +40,28 @@ var tl2 = gsap.timeline({scrollTrigger:{
     scrub:3,
     pin:true
 }});
-tl2
-.to("#can",{
-    y: "-115vw"
-})
+if (window.matchMedia("(max-width: 500px)").matches) {
+    tl2
+    .to("#cir-img1",{
+        y: "-10vw",
+        opacity: "0"
+    }, 'ji')
+    .to("#cir-img2",{
+        y: "-80vw"
+    }, 'ji')
+    .to("#cir-img2",{
+        y: "-85vw",
+        opacity: "0"
+    }, 'ef')
+    .to("#cir-img3",{
+        y: "-155vw",
+    }, 'ef')
+} else {
+    tl2
+    .to("#can",{
+        y: "-115vw"
+    })
+}
 
 var tl3 = gsap.timeline({scrollTrigger:{
     trigger:"txt-three1",

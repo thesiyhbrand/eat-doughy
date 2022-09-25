@@ -527,7 +527,7 @@ html, body{
         transform: translate(-50%, -50%);
     }
     #can{
-        margin-top: -30vh;
+        margin-top: -26vh;
         width: 250%;
         display: flex;
         align-items: center;
